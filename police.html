@@ -1,0 +1,32 @@
+<head><link rel="stylesheet" href="styles.css"></head>
+
+<body>
+    <h2>Sam's Police Installations</h2>
+    <main>
+      <div class="dropdown">
+        <button class="dropbtn">Select</button>
+        <div class="dropdown-content">
+          <a href=".\city.html">City</a>
+          <a href=".\police.html">Police</a>
+          <a href=".\fixes.html">Fixes</a>
+        </div>
+      </div>
+      <p>Here you will find automated installations for PD software. Please don't touch the mouse or keyboard while an installation is in progress.</p>
+    
+        <form action= >
+            <input type="radio" id="mpsradio" name="Scriptselect" value="mpsradio">
+            <label for="mpsradio">Install MPS 9.3</label><br>
+            <input type="radio" id="midasradio" name="Scriptselect" value="midasradio">
+            <label for="midasradio">Install Midas</label><br>
+            <input type="radio" id="smartradio" name="Scriptselect" value="smartradio">
+            <label for="smartradio">Install SmartForce</label>
+              <br>
+              <br>
+          <input id="btn" type="button" value="Install" onclick="execute('new.exe', [], 'C:\\Users\\samueldb\\Desktop\\');" />
+        </form>
+    </main>
+    
+  
+
+  <script type="text/javascript" src="main.js"></script>
+</body>

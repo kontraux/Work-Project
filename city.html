@@ -1,0 +1,66 @@
+<head><link rel="stylesheet" href="styles.css">
+    
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <h2>Sam's City Installations</h2>
+    <main>
+      <div class="dropdown">
+        <button class="dropbtn">Select</button>
+        <div class="dropdown-content">
+          <a href=".\city.html">City</a>
+          <a href=".\police.html">Police</a>
+          <a href=".\fixes.html">Fixes</a>
+        </div>
+      </div>
+      <p>Here you can install common City software. Requires a connection to the City Network.</p>
+    
+        <form action= >
+          
+
+          <input type="radio" id="officeradio" name="Scriptselect" value="officeradio">
+          <label for="officeradio">Install Office 16</label><br>
+          <input type="radio" id="readerradio" name="Scriptselect" value="readerradio">
+          <label for="readerradio">Install Adobe Reader</label><br>
+          <input type="radio" id="chromeradio" name="Scriptselect" value="chromeradio">
+          <label for="chromeradio">Install Google Chrome</label>
+            <br>
+            <br>
+          
+          <input type="button" id="btn" value="Install">
+
+        </form>
+    </main>
+    
+  
+<script>
+const btn = document.querySelector('#btn');
+// handle click button
+btn.onclick = function () {
+    const rbs = document.querySelectorAll('input[name="Scriptselect"]');
+    let selectedValue;
+    for (const rb of rbs) {
+        if (rb.checked) {
+            selectedValue = rb.value;
+            selectedValue.toString;
+            break;
+        }
+    }
+    rbSelect(selectedValue);
+
+};
+function rbSelect(selectedValue) {
+    if (selectedValue == "chromeradio") {
+        alert("This will install Google Chrome eventually.")
+    }
+    else if  (selectedValue == "officeradio") {
+        alert("This will install Office eventually.")
+    }
+    else if (selectedValue == "readerradio") {
+        alert("This will install Reader eventually.")
+    }
+};
+
+</script>
+</body>
