@@ -59,4 +59,50 @@
   
 
   <script type="text/javascript" src="main.js"></script>
+  <script>
+  const btn = document.querySelector('#btn');
+// handle click button
+btn.onclick = function () {
+    const rbs = document.querySelectorAll('input[name="Scriptselect"]');
+    let selectedValue;
+    for (const rb of rbs) {
+        if (rb.checked) {
+            selectedValue = rb.value;
+            selectedValue.toString;
+            break;
+        }
+    }
+    rbSelect(selectedValue);
+
+};
+function rbSelect(selectedValue) {
+    if (selectedValue == "mpsradio") {
+        alert("This will install MPS eventually.")
+    }
+    else if  (selectedValue == "midasradio") {
+        alert("This will install Midas eventually.")
+    }
+    else if (selectedValue == "smartradio") {
+        alert("This will install SmartForce eventually.")
+    }
+    else if (selectedValue == "itrackerradio") {
+        alert("This will install ITracker eventually.")
+    }
+    else if (selectedValue == "nicheradio") {
+        alert("This will install Niche eventually.")
+    }
+    else if (selectedValue == "openvpnradio") {
+        alert("This will install OpenVPN eventually.")
+    }
+    else if (selectedValue == "comodoradio") {
+        alert("This will install Comodo eventually.")
+    }
+    else if (selectedValue == "securityradio") {
+        alert("This will install Security Desk eventually.")
+    }
+    else if (selectedValue == "ciscoradio") {
+        alert("This will install Cisco VPN eventually.")
+    }
+};
+</script>
 </body>
