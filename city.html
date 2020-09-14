@@ -4,36 +4,65 @@
 </head>
 
 <body>
-    <h2>Sam's City Installations</h2>
-    <main>
-      <div class="dropdown">
-        <button class="dropbtn">Select</button>
-        <div class="dropdown-content">
-          <a href=".\city.html">City</a>
-          <a href=".\police.html">Police</a>
-          <a href=".\fixes.html">Fixes</a>
-        </div>
-      </div>
-      <p>Here you can install common City software. Requires a connection to the City Network.</p>
+  <div id="toppanel">
+  <h2 id="city">City of Olathe</h2>
+  </div>
+  <main>
     
-        <form action= >
+    <br>
+    <br>
+    
+      <div id="leftpanel">
+        <nav class="leftpaneltext">
+        <br>
+        <a href=".\index.html">Home</a>
+        <br>
+        <a href=".\city.html">City</a>
+        <br>
+        <a href=".\police.html">Police</a>
+        <br>
+        <a href=".\fixes.html">Fixes</a>
+        <br>
+      </nav>
+      </div>
+      <form action= >
           
-
+        <div class="radioblockleft">
           <input type="radio" id="officeradio" name="Scriptselect" value="officeradio">
           <label for="officeradio">Install Office 16</label><br>
           <input type="radio" id="readerradio" name="Scriptselect" value="readerradio">
-          <label for="readerradio">Install Adobe Reader</label><br>
+          <label for="readerradio">Install Reader</label><br>
           <input type="radio" id="chromeradio" name="Scriptselect" value="chromeradio">
-          <label for="chromeradio">Install Google Chrome</label>
-            <br>
-            <br>
-          <div class="btn">
-           <input type="button" id="btn" value="Install">
-          </div>
+          <label for="chromeradio">Install Chrome</label>
+          <br>
+          <br>
+        </div>
+        <div class="radioblockmiddle">
+          <input type="radio" id="zoomradio" name="Scriptselect" value="zoomradio">
+          <label for="zoomradio">Install Zoom</label><br>
+          <input type="radio" id="skyperadio" name="Scriptselect" value="skyperadio">
+          <label for="skyperadio">Install Skype</label><br>
+          <input type="radio" id="kliteradio" name="Scriptselect" value="kliteradio">
+          <label for="kliteradio">Install K-Lite Codecs</label>
+          <br>
+          <br>
+        </div>
+        <div class="radioblockright">
+          <input type="radio" id="silverlightradio" name="Scriptselect" value="silverlightradio">
+          <label for="zoomradio">Install Silverlight</label><br>
+          <input type="radio" id="commandradio" name="Scriptselect" value="commandradio">
+          <label for="commandradio">Install Command | Update</label><br>
+        </div>
+        <div class="btn">
+         <input type="button" id="btn" value="Install">
+        </div>
 
 
-        </form>
-    </main>
+      </form>
+  </main>
+  
+        
+
     
   
 <script>

@@ -1,19 +1,30 @@
 <head><link rel="stylesheet" href="styles.css"></head>
 
 <body>
-    <h2>Sam's Police Installations</h2>
-    <main>
-      <div class="dropdown">
-        <button class="dropbtn">Select</button>
-        <div class="dropdown-content">
-          <a href=".\city.html">City</a>
-          <a href=".\police.html">Police</a>
-          <a href=".\fixes.html">Fixes</a>
-        </div>
-      </div>
-      <p>Here you will find automated installations for PD software. Please don't touch the mouse or keyboard while an installation is in progress.</p>
+  <div id="toppanel">
+  <h2 id="city">City of Olathe</h2>
+  </div>
+  <main>
     
+    <br>
+    <br>
+    
+      <div id="leftpanel">
+        <nav class="leftpaneltext">
+        <br>
+        <a href=".\index.html">Home</a>
+        <br>
+        <a href=".\city.html">City</a>
+        <br>
+        <a href=".\police.html">Police</a>
+        <br>
+        <a href=".\fixes.html">Fixes</a>
+        <br>
+      </nav>
+      </div>
+      
         <form action= >
+          <div class="radioblockleft">
             <input type="radio" id="mpsradio" name="Scriptselect" value="mpsradio">
             <label for="mpsradio">Install MPS 9.3</label><br>
             <input type="radio" id="midasradio" name="Scriptselect" value="midasradio">
@@ -22,7 +33,26 @@
             <label for="smartradio">Install SmartForce</label>
               <br>
               <br>
-          <input id="btn" type="button" value="Install" onclick="execute('new.exe', [], 'C:\\Users\\samueldb\\Desktop\\');" />
+          </div>
+          <div class="radioblockmiddle">
+            <input type="radio" id="itrackerradio" name="Scriptselect" value="itrackerradio">
+            <label for="itrackerradio">Install Itracker</label><br>
+            <input type="radio" id="nicheradio" name="Scriptselect" value="nicheradio">
+            <label for="nicheradio">Install Niche</label><br>
+            <input type="radio" id="openvpnradio" name="Scriptselect" value="openvpnradio">
+            <label for="openvpnradio">Install OpenVPN</label>
+          </div>
+          <div class="radioblockright">
+            <input type="radio" id="comodoradio" name="Scriptselect" value="comodoradio">
+            <label for="comodoradio">Install Comodo</label><br>
+            <input type="radio" id="securityradio" name="Scriptselect" value="securityradio">
+            <label for="securityadio">Install Security Desk</label><br>
+            <input type="radio" id="ciscoradio" name="Scriptselect" value="ciscoradio">
+            <label for="ciscoradio">Install Cisco VPN</label>
+          </div>
+          <div class="btn">
+            <input type="button" id="btn" value="Install">
+           </div>
         </form>
     </main>
     
