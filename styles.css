@@ -1,58 +1,96 @@
 h2 {
   text-align: center;
-  font: italic bold 18px/18px helvetica,sans-serif;
+  font: 18px/18px 'Federo', sans-serif;
+  color: #005AA0;
   font-size: 40;
   top: 25;
 }
 
-.city {
-  font-family: fantasy;
-
+#city {
+  font-family: 'Federo', sans-serif;
 }
+
+#logo {
+  position: absolute;
+  left: 3;
+  top: 0;
+  z-index: 60;
+  padding: 6px;
+}
+
 body {
     background-color: whitesmoke;
   }
 
 .btn {
-  position: absolute;
+  position: relative;
   text-align: center;
   top: 300;
-  left: 350;
+  left: 0;
 }
 
 #toppanel {
   position: absolute;
-  background-color: #90C0E2;
-  color: rgb(17, 81, 146);
+  background-color: #E4EFF7;
+  color: #005AA0;
   stroke-width: 1;
   text-align: center;
   width: 100%;
   height: 70;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 59;
   border-bottom-style: outset;
+  border-top-style: double;
 }
 
 #leftpanel {
   position: absolute;
   text-align: justify;
   height: 100%;
-  width: 90;
+  width: 105;
   left: 0%;
   top: 0%;
-  background-color: #2e506e;
-  z-index: 98;
+  background-color: #9aa3ac;
+  z-index: 58;
   border-right-style: outset;
   border-color: lightblue;
 }
 
 a {
   position: relative;
-  top: 60;
-  left: 20;
+  top: 70;
+  left: 5;
   font-size: 18;
   padding: 1;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  top: 130;
+  font-size: 20;
+}
+.strip {
+  position: absolute;
+  background-color: #76466E;
+  height: 100px;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  z-index: 57;
+  border-bottom: darkorchid;
+  border-style: double;
+}
+
+#striptext {
+  position: relative;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #E4EFF7;
+  top: 67;
+  font-size: 28;
+  z-index: 56;
 }
 
 .radioblockleft {
@@ -60,7 +98,7 @@ a {
   display: inline-block;
   margin: auto;
   text-align: left;
-  top: 90;
+  top: 130;
   left: 120;
 }
 
@@ -69,7 +107,7 @@ a {
   display: inline-block;
   margin: auto;
   text-align: left;
-  top: 90;
+  top: 130;
   left: 295;
 }
 
@@ -78,10 +116,18 @@ a {
   display: inline-block;
   margin: auto;
   text-align: left;
-  top: 90;
+  top: 130;
   left: 470;
 }
 
 input {
   margin: 10;
+}
+
+form {
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Federo', sans-serif;
 }
