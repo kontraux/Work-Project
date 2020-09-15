@@ -61,8 +61,11 @@ a {
   position: relative;
   top: 70;
   left: 5;
-  font-size: 18;
+  font-size: 15;
   padding: 1;
+  color: black;
+  font-family: 'Asap', sans-serif;
+  line-height: 1.5em;
 }
 
 p {
@@ -81,12 +84,13 @@ p {
   z-index: 57;
   border-bottom: darkorchid;
   border-style: double;
+  font-family: 'Asap', sans-serif;
 }
 
 #striptext {
   position: relative;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Asap', sans-serif;
   color: #E4EFF7;
   top: 67;
   font-size: 28;
@@ -126,6 +130,7 @@ input {
 
 form {
   position: relative;
+  font-family: 'Asap', sans-serif;
 }
 
 @font-face {
