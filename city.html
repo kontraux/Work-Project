@@ -89,28 +89,28 @@ btn.onclick = function () {
 };
 function rbSelect(selectedValue) {
     if (selectedValue == "chromeradio") {
-        alert("This will install Google Chrome eventually.")
+      spawn("powershell.exe",[".\\chrome.ps1"]);
     }
     else if  (selectedValue == "officeradio") {
-        alert("This will install Office eventually.")
+      spawn("powershell.exe",[".\\chrome.ps1"]);
     }
     else if (selectedValue == "zoomradio") {
-        alert("This will install Zoom eventually.")
+      spawn("powershell.exe",[".\\zoom.ps1"]);
     }
     else if (selectedValue == "skyperadio") {
-        alert("This will install Skype eventually.")
+      spawn("powershell.exe",[".\\skype.ps1"]);
     }
     else if (selectedValue == "kliteradio") {
-        alert("This will install K-Lite eventually.")
+      spawn("powershell.exe",[".\\klite.ps1"]);
     }
     else if (selectedValue == "silverlightradio") {
-        alert("This will install Silverlight eventually.")
+      spawn("powershell.exe",[".\\silverlight.ps1"]);
     }
     else if (selectedValue == "commandradio") {
-        alert("This will install Command | Update eventually.")
+      spawn("powershell.exe",[".\\command.ps1"]);
     }
     else if (selectedValue == "readerradio") {
-        alert("This will install Reader eventually.")
+      spawn("powershell.exe",[".\\reader.ps1"]);
     }
 };
 

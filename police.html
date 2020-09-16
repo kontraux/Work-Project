@@ -53,8 +53,8 @@
             <label for="comodoradio">Install Comodo</label><br>
             <input type="radio" id="securityradio" name="Scriptselect" value="securityradio">
             <label for="securityadio">Install Security Desk</label><br>
-            <input type="radio" id="ciscoradio" name="Scriptselect" value="ciscoradio">
-            <label for="ciscoradio">Install Cisco VPN</label>
+            <input type="radio" id="digiticketradio" name="Scriptselect" value="digiticketradio">
+            <label for="digiticketradio">Install Digiticket</label>
           </div>
           <div class="btn">
             <input type="button" id="btn" value="Install">
@@ -83,22 +83,22 @@ btn.onclick = function () {
 };
 function rbSelect(selectedValue) {
     if (selectedValue == "mpsradio") {
-        spawn("powershell.exe",[".\\mps.ps1"]);
+      spawn("powershell.exe",[".\\mps.ps1"]);
     }
     else if  (selectedValue == "midasradio") {
         alert("This will install Midas eventually.")
     }
     else if (selectedValue == "smartradio") {
-        alert("This will install SmartForce eventually.")
+      spawn("powershell.exe",[".\\smartforce.ps1"]);
     }
     else if (selectedValue == "itrackerradio") {
-        alert("This will install ITracker eventually.")
+      spawn("powershell.exe",[".\\itracker.ps1"]);
     }
     else if (selectedValue == "nicheradio") {
-        alert("This will install Niche eventually.")
+      spawn("powershell.exe",[".\\niche.ps1"]);
     }
     else if (selectedValue == "openvpnradio") {
-        spawn("powershell.exe",[".\\openvpn.ps1"]);
+      spawn("powershell.exe",[".\\openvpn.ps1"]);
     }
     else if (selectedValue == "comodoradio") {
         alert("This will install Comodo eventually.")
@@ -106,8 +106,8 @@ function rbSelect(selectedValue) {
     else if (selectedValue == "securityradio") {
         alert("This will install Security Desk eventually.")
     }
-    else if (selectedValue == "ciscoradio") {
-        alert("This will install Cisco VPN eventually.")
+    else if (selectedValue == "digiticketradio") {
+      spawn("powershell.exe",[".\\digiticket.ps1"]);
     }
 };
 </script>

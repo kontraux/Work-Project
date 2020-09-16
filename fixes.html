@@ -40,6 +40,10 @@
         <label for="Default">Fix Default App Associations</label>
       <br>
       <br>
+      <div class="radioblockmiddle">
+        <input type="radio" id="credradio" name="Scriptselect" value="credradio">
+        <label for="credradio">Clear Credential Manager</label><br>
+      </div>
       </div>
       <div class="btn">
         <input type="button" id="btn" value="Install">
@@ -51,8 +55,21 @@
     
   </main>
     
-
+  <script>
+  function rbSelect(selectedValue) {
+    if (selectedValue == ".NET") {
+      spawn("powershell.exe",[".\\dotnet.ps1"]);
+    }
+    else if  (selectedValue == "wifi") {
+      spawn("powershell.exe",[".\\wifi.ps1"]);
+    }
+    else if (selectedValue == "defaultradio") {
+      spawn("powershell.exe",[".\\default.ps1"]);
+    }
+    else if (selectedValue == "credradio") {
+      spawn("powershell.exe",[".\\cred.ps1"]);
+    }
   
-
+  </script>
   <script type="text/javascript" src="main.js"></script>
 </body>
