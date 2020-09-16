@@ -20,24 +20,26 @@ h2 {
 }
 
 body {
-    background-color: whitesmoke;
+    background: whitesmoke;
   }
 
 .btn {
+  display: block;
   position: relative;
   text-align: center;
   top: 300;
-  left: 0;
+  left: 320;
+  width: 90;
+  height: 3em;
+  z-index: 99;
+  font-size: large;
 }
 
-.button {
-  size: 60;
-}
 
 .toppanel {
   position: absolute;
-  background-color: whitesmoke;
-  color: #005AA0;
+  background: whitesmoke;
+  color: #115192;
   stroke-width: 1;
   text-align: center;
   width: 100%;
@@ -45,8 +47,10 @@ body {
   top: 0;
   left: 0;
   z-index: 61;
-  border-bottom-style: outset;
-  border-top-style: double;
+  border-bottom: solid;
+  border-top: solid;
+  border-bottom-color: darkgray;
+  border-top-color: darkgray;
 }
 
 .leftpanel {
@@ -56,10 +60,9 @@ body {
   width: 105;
   left: 0%;
   top: 0%;
-  background-color:whitesmoke;
+  background: linear-gradient(whitesmoke, darkgray);
   z-index: 58;
   border-right-style: outset;
-  border-color: lightblue;
 }
 
 a {
@@ -82,21 +85,23 @@ p {
 }
 .strip {
   position: absolute;
-  background-color: #5900ff;
+  background-color: #115192;
   height: 100px;
   width: 100%;
   right: 0;
   text-align: center;
   z-index: 60;
-  border-bottom: lightblue;
-  border-style: double;
+  border-color: black;
+  border-bottom: outset;
+  border-top: outset;
+ 
 }
 
 .striptext {
   position: relative;
   text-align: center;
   font-family: 'Asap', sans-serif;
-  color: #E4EFF7;
+  color: white;
   top: 67;
   font-size: 28;
   z-index: 56;
@@ -108,7 +113,7 @@ p {
   margin: auto;
   text-align: left;
   top: 130;
-  left: 120;
+  left: 130;
 }
 
 .radioblockmiddle {
@@ -129,14 +134,16 @@ p {
   left: 470;
 }
 
+
 input {
+  position: relative;
   margin: 10;
   font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
 }
 
-form {
+label {
   position: relative;
   font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
 }
-
-
