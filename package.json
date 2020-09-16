@@ -1,14 +1,26 @@
 {
-  "name": "project",
+  "name": "olathe",
   "version": "1.0.0",
-  "description": "first JavaScript project",
-  "main": "index.js",
+  "description": "Olathe Software Installer",
+  "main": "main.js",
+  "dependencies": {
+    "node.js": "0.0.1-security"
+  },
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-packager": "^15.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kontraux/Work-Project.git"
   },
   "author": "Sam Blake",
   "license": "ISC",
-  "dependencies": {
-    "vue": "^2.6.12"
-  }
+  "bugs": {
+    "url": "https://github.com/kontraux/Work-Project/issues"
+  },
+  "homepage": "https://github.com/kontraux/Work-Project#readme"
 }
